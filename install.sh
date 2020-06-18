@@ -5,7 +5,7 @@ apt update
 wait
 
 echo "Install Gnome package"
-apt install xorg gnome gnome-shell #installs GNOME desktop and xorg onto the system
+apt-get install -y xorg gnome gnome-shell #installs GNOME desktop and xorg onto the system
 wait
 
 echo "Disabling dhcpcd to be able to connect to wifi via gnome network manager"
