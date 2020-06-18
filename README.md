@@ -7,6 +7,8 @@ To install on Raspberry Pi OS:
 
 git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash install.sh
 
-You will need to disable the animations yourself (working on it), but everything else should be fine. 
+You will need to disable the animations yourself (working on it), and you'll also need to enable fakeKMS openGL driver in raspi-config, but everything else should be fine. 
+
+Once you get to the login screen, you'll need to change the session to "GNOME on Xorg"
 
 Thank you.
