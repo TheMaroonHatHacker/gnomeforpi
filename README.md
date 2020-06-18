@@ -6,9 +6,7 @@ This simply installs the gnome package for Raspberry Pi OS, then replaces config
 To install on Raspberry Pi OS:
 
 git clone https://github.com/TerraGitHuB/gnomeforpi.git
-
 cd gnomeforpi
-
 sudo bash install.sh
 
 You will need to disable the animations yourself (working on it), but everything else should be fine. 
