@@ -7,7 +7,7 @@ wait
 
 echo "Install Gnome package"
 sleep 2
-apt-get install -y xorg gnome gnome-shell #installs GNOME desktop and xorg onto the system
+apt-get install -y gnome-shell #installs GNOME desktop and xorg onto the system
 wait
 
 echo "Disabling dhcpcd to be able to connect to wifi via gnome network manager"
@@ -27,12 +27,12 @@ mv  default.conf /usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf
 echo "change permission settings for GNOME"
 sleep 2
 wait
-cp localauthority.conf /etc/polkit-1/localauthority.conf.d/60-localauthority.conf
+cp localauthority.conf /etc/polkit-1/localauthority.conf.d/51-localauthority.conf
 wait
 
-echo "Install chrome extension intergration for GNOME"
+echo "Installing chromium"
 sleep 2
-apt install chrome-gnome-shell
+apt install rp[i-chromium-mods
 wait
 
 echo "Rebooting, enjoy your new desktop!"
