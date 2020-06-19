@@ -2,12 +2,14 @@ echo "Starting script..."
 
 echo "Updating Repositories"
 sleep 2
-apt update
+apt-get update
+wait
+apt-get upgrade
 wait
 
-echo "Install Gnome package"
+echo "Install all packages"
 sleep 2
-apt-get install -y gnome-shell #installs GNOME desktop and xorg onto the system
+apt-get install -y gnome-shell rpi-chromium-mods #installs GNOME desktop and xorg onto the system
 wait
 
 echo "Disabling dhcpcd to be able to connect to wifi via gnome network manager"
@@ -29,11 +31,6 @@ wait
 #wait
 #cp localauthority.conf /etc/polkit-1/localauthority.conf.d/51-localauthority.conf
 #wait
-
-echo "Installing chromium"
-sleep 2
-apt install rp[i-chromium-mods
-wait
 
 echo "Rebooting, enjoy your new desktop!"
 sleep 2
