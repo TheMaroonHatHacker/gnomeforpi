@@ -4,7 +4,7 @@ echo "Updating Repositories"
 sleep 2
 apt-get update
 wait
-apt-get upgrade
+apt-get upgrade -y
 wait
 
 echo "Install all packages"
