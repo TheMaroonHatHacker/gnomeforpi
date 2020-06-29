@@ -34,6 +34,11 @@ wait
 #sudo sed -i 's/priority = 7/;priority = 7/g' /usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf
 #wait
 
+echo "Disable Animations"
+sleep 2
+gsettings set org.gnome.desktop.interface enable-animations false
+wait
+
 echo "change permission settings for GNOME"
 sleep 2
 sudo sh -c 'echo "[Configuration]" >> /etc/polkit-1/localauthority.conf.d/51-admin.conf'
