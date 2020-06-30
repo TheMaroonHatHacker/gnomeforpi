@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "Starting script..."
 
 echo "Updating Repositories"
@@ -19,8 +20,8 @@ wait
 
 echo "Correcting Audio for GNOME"
 sleep 2
-sudo sed -i 's/load-module module-udev-detect/load-module module-udev-detect tsched=0/g' /etc/pulse/default.pa
-wait
+#sudo sed -i 's/load-module module-udev-detect/load-module module-udev-detect tsched=0/g' /etc/pulse/default.pa
+#wait
 #sudo sed -i 's/[Mapping analog-mono]/;[Mapping analog-mono]/g' /usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf
 #wait
 #sudo sed -i 's/device-strings = hw:%f/;device-strings = hw:%f/g' /usr/share/pulseaudio/alsa-mixer/profile-sets/default.conf
@@ -36,7 +37,7 @@ wait
 
 echo "Disable Animations"
 sleep 2
-gsettings set org.gnome.desktop.interface enable-animations false
+sudo gsettings set org.gnome.desktop.interface enable-animations false
 wait
 
 echo "change permission settings for GNOME"
