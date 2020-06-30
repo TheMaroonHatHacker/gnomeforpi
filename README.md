@@ -1,6 +1,10 @@
 # gnomeforpi
 A script to install gnome on the Raspberry Pi
 
+WARNING: All tests are made on this branch at the moment. Any changes may break GNOME desktop even more so than without.
+
+Currently we don't support audio. If you need to use audio, we recommend you use bluetooth
+
 This simply installs the gnome package for Raspberry Pi OS, then replaces config files to optimize GNOME.
 
 To get started, you'll need to do initial setup first.
