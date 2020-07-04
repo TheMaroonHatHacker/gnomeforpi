@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 echo "Starting script..."
 
 echo "Updating Repositories"
@@ -8,10 +8,26 @@ wait
 apt-get upgrade -y
 wait
 
-echo "Install all packages"
-sleep 2
-apt-get install -y gnome gnome-shell rpi-chromium-mods xorg #installs all required packges
-wait
+lite=0
+
+while [ $# -gt 0 ]; do
+  case "${1}" in
+   -l|--lite)
+      lite=1
+      shift;;
+    *)
+  esac
+done
+    
+if [ "${lite}" -eq 0 ]; then
+  echo "Install all packages"
+  sleep 2
+  apt-get install -y gnome gnome-shell rpi-chromium-mods xorg #installs all required packges
+  wait
+else
+  sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods
+  wait
+fi
 
 echo "Disabling dhcpcd to be able to connect to wifi via gnome network manager"
 sleep 2
