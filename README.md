@@ -23,8 +23,7 @@ You will want to enable fakeKMS (Advanced -> openGL driver -> fakeKMS). It may a
 
 Now that you've done that, run: 
 ```sh
-git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash gnomeforpi-install.sh
-```
+git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash gnomeforpi
 and just let her rip!
 
 Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above. Before you login though, change the session from "GNOME" to GNOME on Xorg.
