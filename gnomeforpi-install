@@ -25,6 +25,7 @@ if [ "${lite}" -eq 0 ]; then
   apt-get install -y gnome gnome-shell rpi-chromium-mods xorg #installs all required packges
   wait
 else
+echo "Install minimal options."
   sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods
   wait
 fi
