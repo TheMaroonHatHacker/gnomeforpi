@@ -27,8 +27,8 @@ git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo
 ```
 and just let her rip!
 
-Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above. Before you login though, change the session from "GNOME" to GNOME on Xorg.
+Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above.
 
-Everything should be working now.
+Everything should be working now. You will need to disable animations in tweaks.
 
 Enjoy!
