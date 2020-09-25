@@ -23,7 +23,7 @@ You will want to enable fakeKMS (Advanced -> openGL driver -> fakeKMS). It may a
 
 Now that you've done that, run: 
 ```sh
-git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash gnomeforpi
+git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash gnomeforpi-install
 ```
 and just let her rip!
 
