@@ -3,7 +3,7 @@ A script to install gnome on the Raspberry Pi
 
 This is the stable branch. This branch is recommended. If you want to live on the edge and bug test, head over to beta.
 
-Currently we don't support audio. If you need to use audio, we recommend you use bluetooth
+Audio is now supported, however it is mono over audio jack. We still recommend you use bluetooth
 
 This simply installs the gnome package for Raspberry Pi OS, then replaces config files to optimize GNOME.
 
