@@ -29,6 +29,8 @@ and just let her rip!
 
 Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above.
 
+NOTE: Click the cogwheel at the bottom left of the login screen to change to "GNOME on Xorg"
+
 Everything should be working now. You will need to disable animations in tweaks.
 
 Enjoy!
