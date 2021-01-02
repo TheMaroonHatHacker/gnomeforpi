@@ -5,7 +5,7 @@ This is the stable branch. This branch is recommended. If you want to live on th
 
 Audio is now supported, however it is mono over audio jack. We still recommend you use bluetooth
 
-This simply installs the gnome package for Raspberry Pi OS, then replaces config files to optimize GNOME.
+This simply installs the gnome package for Raspberry Pi OS, then modifies config files to optimize GNOME.
 
 To get started, you'll need to do initial setup first.
 
