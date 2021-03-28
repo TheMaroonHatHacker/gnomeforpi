@@ -35,10 +35,10 @@ sleep 2
 systemctl disable dhcpcd && /etc/init.d/dhcpcd stop
 wait
 
-echo "Correcting Audio for GNOME"
-sleep 2
-sudo sed -i 's/load-module module-udev-detect/load-module module-udev-detect tsched=0/g' /etc/pulse/default.pa
-wait
+#echo "Correcting Audio for GNOME"
+#sleep 2
+#sudo sed -i 's/load-module module-udev-detect/load-module module-udev-detect tsched=0/g' /etc/pulse/default.pa
+#wait
 
 #echo "Disable Animations"
 #sleep 2
