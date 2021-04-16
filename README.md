@@ -1,6 +1,8 @@
 # gnomeforpi
 A script to install gnome on the Raspberry Pi
 
+(https://github.com/TerraGitHuB/gnomeforpi/blob/stable/Screenshot%20from%202021-04-16%2010-11-01.png)
+
 This is the stable branch. This branch is recommended. If you want to live on the edge and bug test, head over to beta.
 
 Audio is now supported, however it is mono over audio jack. We still recommend you use bluetooth
