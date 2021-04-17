@@ -21,6 +21,19 @@ sudo raspi-config
 
 You will want to enable fakeKMS (Advanced -> openGL driver -> fakeKMS). It may ask to install packages. Install them.
 
+Also, now is a good time to update:
+
+```sh
+sudo apt update
+```
+
+and install git:
+
+
+```sh
+sudo apt install git
+```
+
 Now that you've done that, run: 
 ```sh
 git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash gnomeforpi-install
