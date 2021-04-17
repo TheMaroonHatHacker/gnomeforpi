@@ -22,11 +22,11 @@ done
 if [ "${lite}" -eq 0 ]; then
   echo "Install all packages"
   sleep 2
-  apt-get install -y gnome gnome-shell rpi-chromium-mods xorg #installs all required packges
+  apt-get install -y gnome gnome-shell rpi-chromium-mods xorg piwiz#installs all required packges
   wait
 else
 echo "Install minimal options."
-  sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods
+  sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods piwiz
   wait
 fi
 
