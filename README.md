@@ -3,9 +3,7 @@ A script to install gnome on the Raspberry Pi
 
 ![alt text](https://github.com/TerraGitHuB/gnomeforpi/blob/stable/Screenshot%20from%202021-04-16%2010-11-01.png)
 
-This is the stable branch. This branch is recommended. If you want to live on the edge and bug test, head over to beta.
-
-Audio is now supported, however it is mono over audio jack. We still recommend you use bluetooth
+This is the stable branch. This branch is recommended. If you want to live on the edge and bug test, head over to beta
 
 This simply installs the gnome package for Raspberry Pi OS, then modifies config files to optimize GNOME.
 
@@ -31,8 +29,8 @@ and just let her rip!
 
 Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above.
 
-NOTE: Click the cogwheel at the bottom left of the login screen to change to "GNOME on Xorg"
+NOTE: Click the cogwheel at the bottom left of the login screen to change to "GNOME on Xorg". In my expeirirence, it provides the best performance.
 
-Everything should be working now. You will need to disable animations in tweaks.
+Everything should be working now. Animations work, but they can be disabled in tweaks.
 
 Enjoy!
