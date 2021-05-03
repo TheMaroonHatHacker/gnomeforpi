@@ -22,7 +22,7 @@ done
 if [ "${lite}" -eq 0 ]; then
   echo "Install all packages"
   sleep 2
-  apt-get install -y gnome gnome-core gnome-software gnome-shell rpi-chromium-mods xorg piwiz #installs all required packges
+  apt-get install -y gnome gnome-core gnome-software gnome-shell rpi-chromium-mods xorg piwiz #installs all required packages
   wait
 else
 echo "Install minimal options."
