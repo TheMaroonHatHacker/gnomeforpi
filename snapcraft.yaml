@@ -1,0 +1,5 @@
+base: bare
+source: https://github.com/TerraGitHuB/gnomeforpi.git
+apps:
+  part-os-release:
+    command: bash gnomeforpi
