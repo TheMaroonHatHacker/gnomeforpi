@@ -3,8 +3,6 @@ A script to install gnome on the Raspberry Pi
 
 ![alt text](https://github.com/TerraGitHuB/gnomeforpi/blob/stable/Screenshot%20from%202021-04-16%2010-11-01.png)
 
-This is the stable branch. This branch is recommended. If you want to live on the edge and bug test, head over to beta
-
 This simply installs the gnome package for Raspberry Pi OS, then modifies config files to optimize GNOME.
 
 To get started, you'll need to do initial setup first.
