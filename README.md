@@ -7,6 +7,8 @@ This simply installs the gnome package for Raspberry Pi OS, then modifies config
 
 If you just want an image that you can use, click this link for a pre-built image: https://drive.google.com/file/d/1HhPrALnSO8WIo6ZK-dp4QFzuXbW_L-p0/view?usp=sharing
 
+Video tutorial: https://youtu.be/JTwh7ndiNU0
+
 To get started, you'll need to do initial setup first.
 
 This must be done with Raspberry Pi OS lite, and an ethernet cable is required at the beginning of the prossedure.
