@@ -31,8 +31,11 @@ if [ "${lite}" -eq 0 ]; then
   apt-get install -y gnome gnome-core gnome-software gnome-shell rpi-chromium-mods xorg piwiz #installs all required packages
   wait
 else
-echo "Install minimal options."
+  echo "Install minimal options."
   sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods piwiz
+  wait
+  echo "Fixing the OS defaulting to console."
+  sudo systemctl set-default graphical.target
   wait
 fi
 
