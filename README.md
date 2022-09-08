@@ -1,45 +1,41 @@
 # GNOME For Pi
+
 A script to install gnome on the Raspberry Pi
 
-![alt text](https://github.com/TerraGitHuB/gnomeforpi/blob/stable/Screenshot%20from%202021-04-16%2010-11-01.png)
+## Requirements
+
+* Raspberry Pi with an up to date Raspberry Pi OS Lite (R-Pi OS) installed. This can be a fresh install or a previous installation that is current with Bullseye. If the current install has not been updated recently, it would be wise to update and reboot before starting. (This has not been tested with older (e.g. Buster R-Pi OS) or the full R-Pi OS with native GUI.)
+* Internet connection either via WiFi or Ethernet. This will need to pull a lot of packages from the repositories.
+
+![alt text](https://github.com/HankB/gnomeforpi/blob/stable/Screenshot.png)
 
 This simply installs the gnome package for Raspberry Pi OS, then modifies config files to optimize GNOME.
 
-If you just want an image that you can use, click this link for a pre-built image: https://drive.google.com/file/d/1HhPrALnSO8WIo6ZK-dp4QFzuXbW_L-p0/view?usp=sharing
+If you just want an image that you can use, click this link for a pre-built image: https://drive.google.com/file/d/1HhPrALnSO8WIo6ZK-dp4QFzuXbW_L-p0/view?usp=sharing (Note: Status of these images is not known.)
 
-Video tutorial: https://youtu.be/JTwh7ndiNU0
+Video tutorial: <https://youtu.be/JTwh7ndiNU0>
+
+## Options
+
+There is a 'lite' install that can be implemented by adding executing the command `sudo gnomeforpi-install --lite` instead of `sudo gnomeforpi-install` (below.) The 'lite' install includes fewer packages and does not refer to the 'Lite' version of R-Pi OS.
+
+## Process
 
 To get started, you'll need to do initial setup first.
 
-This must be done with Raspberry Pi OS lite, and an ethernet cable is required at the beginning of the prossedure.
+This must be done with Raspberry Pi OS lite, and an Ethernet or WiFi connection to the Internet is required.
 
-Firstly, login. REMEMBER: Username: pi, Password: raspberry
+Firstly, login. using the user name and password established at first boot (or `pi`/`raspberry` for an older install and still using the defaults.) Then execute the following commands:
 
-then type:
-
-```sh
-sudo raspi-config
+```text
+wget https://github.com/HankB/gnomeforpi/archive/refs/heads/stable.zip
+unzip stable.zip
+cd gnomeforpi
+sudo gnomeforpi-install
+# - or - 
+sudo gnomeforpi-install --lite
 ```
 
-You will want to enable fakeKMS (Advanced -> openGL driver -> fakeKMS). It may ask to install packages. Install them.
-
-Also, now is a good time to update:
-
-```sh
-sudo apt update
-```
-
-and install git:
-
-
-```sh
-sudo apt install git
-```
-
-Now that you've done that, run: 
-```sh
-git clone https://github.com/TerraGitHuB/gnomeforpi.git && cd gnomeforpi && sudo bash gnomeforpi-install
-```
 and just let her rip!
 
 Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above.
