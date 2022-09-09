@@ -29,7 +29,7 @@ This must be done with Raspberry Pi OS lite, and an Ethernet or WiFi connection 
 Firstly, login. using the user name and password established at first boot (or `pi`/`raspberry` for an older install which is still using the defaults.) Then execute the following commands:
 
 ```text
-wget https://github.com/HankB/gnomeforpi/archive/refs/heads/stable.zip
+wget https://github.com/TerraGitHuB/gnomeforpi/archive/refs/heads/stable.zip
 unzip stable.zip
 cd gnomeforpi-stable
 sudo ./gnomeforpi-install
