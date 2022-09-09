@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
 
 if [ "${UID}" != "0" ]; then
   echo "You must be root to run this script"
@@ -28,21 +28,23 @@ done
 if [ "${lite}" -eq 0 ]; then
   echo "Install all packages"
   sleep 2
-  apt-get install -y gnome gnome-core gnome-software gnome-shell rpi-chromium-mods xorg piwiz #installs all required packages
+  apt-get install -y gnome gnome-core gnome-software gnome-shell rpi-chromium-mods xorg #installs all required packages
   wait
 else
   echo "Install minimal options."
-  sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods piwiz
-  wait
-  echo "Fixing the OS defaulting to console."
-  sudo systemctl set-default graphical.target
+  sudo apt install -y gnome-session gnome-shell nautilus gedit gnome-terminal seahorse gnome-tweaks rpi-chromium-mods
   wait
 fi
 
+echo "Start Gnome at boot"
+sudo systemctl set-default graphical.target
+
 echo "Disabling dhcpcd to be able to connect to wifi via gnome network manager"
+echo "And enabling Network Manager to manage interfaces"
 sleep 2
 systemctl disable dhcpcd && /etc/init.d/dhcpcd stop
-wait
+sed -i s/managed=false/managed=true/ /etc/NetworkManager/NetworkManager.conf
+systemctl enable NetworkManager
 
 echo "change permission settings for GNOME"
 sleep 2
