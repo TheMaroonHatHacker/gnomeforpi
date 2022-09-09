@@ -13,8 +13,6 @@ Testing has been performed on a 3B+ using the 32 bit release and on a 4B using t
 
 This simply installs the gnome package for Raspberry Pi OS, then modifies config files to optimize GNOME.
 
-If you just want an image that you can use, click this link for a pre-built image: https://drive.google.com/file/d/1HhPrALnSO8WIo6ZK-dp4QFzuXbW_L-p0/view?usp=sharing (Note: Status of these images is not known.)
-
 Video tutorial: <https://youtu.be/JTwh7ndiNU0>
 
 ## Options
