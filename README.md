@@ -32,7 +32,7 @@ unzip stable.zip
 cd gnomeforpi-stable
 sudo ./gnomeforpi-install
 # - or - 
-sudo gnomeforpi-install --lite
+sudo ./gnomeforpi-install --lite
 ```
 
 and just let her rip!
