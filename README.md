@@ -1,6 +1,6 @@
 # GNOME For Pi
 
-A script to install gnome on the Raspberry Pi
+A script to install GNOME on the Raspberry Pi
 
 ## Requirements
 
@@ -11,7 +11,7 @@ Testing has been performed on a 3B+ using the 32 bit release and on a 4B using t
 
 ![alt text](https://github.com/HankB/gnomeforpi/blob/stable/Screenshot.png)
 
-This simply installs the gnome package for Raspberry Pi OS, then modifies config files to optimize GNOME.
+This simply installs the GNOME package for Raspberry Pi OS, then modifies config files to optimize GNOME.
 
 Video tutorial: <https://youtu.be/JTwh7ndiNU0>
 
@@ -37,10 +37,10 @@ sudo ./gnomeforpi-install --lite
 
 and just let her rip!
 
-Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above.
+Once it's finished, it will reboot, and you'll be faced with a login screen. Use the same credetials as above mentioned.
 
-NOTE: Click the cogwheel at the bottom left of the login screen to change to "GNOME on Xorg". In my expeirirence, it provides the best performance.
+> NOTE: Click the cogwheel at the bottom left of the login screen to change to "GNOME on Xorg". In my expeirirence, it provides the best performance. If needed  Animations can be disabled in gnome-tweaks.
 
-Everything should be working now. Animations work, but they can be disabled in tweaks.
+If you expirience any bugs with the script itself feel free to open an issue here.
 
 Enjoy!
