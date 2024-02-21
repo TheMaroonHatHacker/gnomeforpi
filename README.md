@@ -2,6 +2,10 @@
 
 A script to install GNOME on the Raspberry Pi
 
+## NOTE
+
+This project hasn't been worked on by me for a long time. As such it may be currently broken. Pull requests from others are welcome, otherwise wait till I have the time to pick this back up again.
+
 ## Requirements
 
 * Raspberry Pi with an up to date Raspberry Pi OS Lite (R-Pi OS) installed. This can be a fresh install or a previous installation that is current with Bullseye. If the current install has not been updated recently, it would be wise to update and reboot before starting. (This has not been tested with older (e.g. Buster R-Pi OS) or the full R-Pi OS with native GUI.)
